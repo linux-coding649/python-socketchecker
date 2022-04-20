@@ -26,7 +26,7 @@ while True:
     if not ngood:
         print('Port: TCP/'+str(stt)+', Socket is not used.')
     tsock.close()
-    print('Trying UDP/'+str(stt))
+    print('Trying Port UDP/'+str(stt))
     usock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     try:
         usock.bind(('0.0.0.0', stt))
